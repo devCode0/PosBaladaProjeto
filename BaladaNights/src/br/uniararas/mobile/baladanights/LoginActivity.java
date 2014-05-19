@@ -159,7 +159,6 @@ public class LoginActivity extends Activity implements LoginView {
 					chkSalvarPrefUsuario.setVisibility(View.GONE);
 					
 					new LoadingAsync().execute();
-					finish();
 				}
 
 				//Temporario Fazer Login
