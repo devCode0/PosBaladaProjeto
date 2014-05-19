@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cadastro_balada_layout"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:id="@+id/cadastro_balada_txvBaladaUniraras"
+            style="@style/titulo_telas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastrar_balada_Titulo" />
+
+        <ImageView
+            android:id="@+id/cadastro_balada_imagen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/cadastro_balada_txvBaladaUniraras"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher" 
+            android:contentDescription="@string/cadastrar_balada_Titulo"/>
+
+        <EditText
+            android:id="@+id/cadastro_balada_editNome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cadastro_balada_imagen"
+            android:hint="@string/cadastrar_balada_edtNome" />
+
+        <EditText
+            android:id="@+id/cadastro_balada_editDescricao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cadastro_balada_editNome"
+            android:hint="@string/cadastrar_balada_editDescricao" />
+
+        <EditText
+            android:id="@+id/cadastro_balada_editLocal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cadastro_balada_editDescricao"
+            android:hint="@string/cadastrar_balada_editeditLocal" />
+
+        <LinearLayout
+            android:id="@+id/cadastro_balada_LinearHoraData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cadastro_balada_editLocal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/cadastro_balada_editData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/cadastrar_balada_editData" 
+                android:editable="false"/>
+
+            <EditText
+                android:id="@+id/cadastro_balada_editHora"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/cadastrar_balada_editHora" 
+                android:editable="false"/>
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/cadastro_balada_swtOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cadastro_balada_LinearHoraData"
+            android:layout_marginTop="10dp"
+            android:text="@string/cadastrar_balada_swtOpen"
+            android:textOff="Não"
+            android:textOn="Sim" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cadastro_balada_swtOpen"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/cadastro_balada_btnSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/padding_small"
+                android:layout_toLeftOf="@+id/cadastro_balada_pontoCentral"
+                android:background="@drawable/shape_button"
+                android:text="@string/cadastrar_balada_btnSalvar"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/cadastro_balada_pontoCentral"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="" />
+
+            <Button
+                android:id="@+id/cadastro_balada_btnCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_toRightOf="@+id/cadastro_balada_pontoCentral"
+                android:background="@drawable/shape_button_limpar"
+                android:text="@string/cadastrar_balada_btnCancelar"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+        
+
+    </RelativeLayout>
+
+</ScrollView>

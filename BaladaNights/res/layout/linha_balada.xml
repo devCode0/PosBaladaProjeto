@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/linha_balada_foto"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/linha_balada_nome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome da Balda Vai aqui"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_toRightOf="@id/linha_balada_foto"/>
+
+    <TextView
+        android:id="@+id/linha_balada_local"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Local Balada"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/linha_balada_nome"
+        android:layout_toRightOf="@id/linha_balada_foto"/>
+
+    <RelativeLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linha_balada_local"
+        android:layout_toRightOf="@id/linha_balada_foto">
+    <TextView
+        android:id="@+id/linha_balada_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23:57   "
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/space"/>
+
+    <TextView
+        android:id="@id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/linha_balada_fim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04:00"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_toRightOf= "@id/linha_balada_inicio"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    
+
+</RelativeLayout>

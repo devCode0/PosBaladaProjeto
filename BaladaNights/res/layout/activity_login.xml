@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_large"
+    style="@style/tela"
+    tools:context="br.uniararas.mobile.baladanights.LoginActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+             >
+        </ProgressBar>
+    
+    <TextView
+        android:id="@+id/login_txvBaladaUniraras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="@string/titulo_balada" 
+        style="@style/titulo_balada"/>
+
+    <EditText
+        android:id="@+id/login_edtUsuario"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/login_txvBaladaUniraras"
+        android:layout_marginTop="30dp"
+        android:hint="@string/login_edtUsuario" 
+        android:inputType="text"
+        android:background="@drawable/shape_text_view"/>
+
+    <EditText
+        android:id="@+id/login_edtSenha"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/login_edtUsuario"
+        android:inputType="textPassword"
+        android:hint="@string/login_edtSenha" 
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_text_view"/>
+    
+    <CheckBox
+            android:id="@+id/login_chkSalvarPrefUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/login_edtSenha"
+            android:text="@string/login_chkSalvar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@+id/login_chkSalvarPrefUsuario"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/login_btnEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/login_pontoCentral"
+            android:text="@string/login_btnEntrar" 
+            android:background="@drawable/shape_button"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/padding_small"/>
+
+        <TextView
+            android:id="@+id/login_pontoCentral"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+
+        <Button
+            android:id="@+id/login_btnLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/login_pontoCentral"
+            android:text="@string/login_btnLimpar" 
+            android:textColor="@color/white"
+            android:background="@drawable/shape_button_limpar" 
+            android:layout_marginLeft="@dimen/padding_small" />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Usuario: Pedro | Senha: 123"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+    
+</RelativeLayout>

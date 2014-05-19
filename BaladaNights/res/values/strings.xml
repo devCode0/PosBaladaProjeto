@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Balada Nights</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">Home - Balada Nights</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo_balada">Balada UNIARARAS</string>
+
+    <!-- Activity de Login -->
+    <string name="login_edtUsuario">Digite o Usuário:</string>
+    <string name="login_edtSenha">***********</string>
+    <string name="login_btnEntrar">Entrar</string>
+    <string name="login_btnLimpar">Limpar</string>
+    <string name="login_chkSalvar">Salvar preferência de Usuário?</string>
+    
+    
+    <!-- Fragment de Cadastrar Balada -->
+    <string name="cadastrar_balada_Titulo">Cadastrar Balada</string>
+    <string name="cadastrar_balada_edtNome">Nome da Balada</string>
+    <string name="cadastrar_balada_editDescricao">Descrição da Balada</string>
+    <string name="cadastrar_balada_editeditLocal">Endereço da Balada</string>
+    <string name="cadastrar_balada_editData">Data</string>
+    <string name="cadastrar_balada_editHora">Hora de Início</string>
+    <string name="cadastrar_balada_swtOpen">Open Bar?</string>
+    <string name="cadastrar_balada_btnSalvar">Salvar</string>
+    <string name="cadastrar_balada_btnCancelar">Cancelar</string>
+
+    <!-- Validação -->
+    <string name="valid_vazio">Em Branco!</string>
+
+    <!-- Drawer NAvegação -->
+    <string-array name="items">
+        <item>Home</item>
+        <item>Cadastrar Balada</item>
+        <item>Sair</item>
+    </string-array>
+
+    <string name="procurar_barra">Digite a Balada para buscar:</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_cadastra_balada">Cadastrar Balada</string>
+
+</resources>
